@@ -1,0 +1,65 @@
+.quick-card {
+    width: 100%;
+    max-width: 850px;
+    .properties-list {
+        line-height: 1.3;
+        font-size: 15px;
+    }
+}
+
+.quick-card-wrap {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.quick-card-media {
+    max-width: 200px;
+    flex: 0 0 200px;
+}
+
+.quick-card-content {
+    padding-left: 30px;
+    flex: 1;
+    .properties-list {
+        margin-bottom: 30px;
+        border-width: 0;
+    }
+    .property-item {
+        padding: 0;
+        flex-direction: column;
+    }
+    .property-name {
+        margin-bottom: 15px;
+        max-width: none;
+        flex: none;
+    }
+    .property-value {
+        padding-left: 0;
+    }
+}
+
+.quick-card-title {
+    padding: 0;
+    margin: 0 0 40px;
+    font-size: 20px;
+}
+
+.quick-card-price {
+    margin-bottom: 30px;
+    span {
+        font-size: 18px;
+    }
+    .ruble {
+        width: 15px;
+        height: 16px;
+        position: relative;
+        top: 3px;
+        
+    }
+}
+
+.quick-card-desc {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.3;
+}

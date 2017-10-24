@@ -1,0 +1,106 @@
+.hide-placeholder {
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        color: #5f5f5f;
+        @include font-size(14px);
+        transition: opacity 0.3s ease;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        color: #5f5f5f;
+        @include font-size(14px);
+        transition: opacity 0.3s ease;
+    }
+    &:-moz-placeholder {
+        opacity: 1;
+        color: #5f5f5f;
+        @include font-size(14px);
+        transition: opacity 0.3s ease;
+    }
+    &:-ms-input-placeholder {
+        opacity: 1;
+        color: #5f5f5f;
+        @include font-size(14px);
+        transition: opacity 0.3s ease;
+    }
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.ui-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 11px 10px;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    font-weight: normal;
+    font-size: 15px;
+    transition: all .3s ease;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    &:not(select) {
+        color: $azureColor;
+    }
+    &:focus {
+        outline: 0;
+        + .input-label {
+            transform: translateY(0);
+        }
+    }
+}
+
+.input-label {
+    color: $mainColor;
+    font-size: 14px;
+    top: -17px;
+    left: 10px;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(30px);
+    transition: all .3s ease;
+}
+
+.field-filled .input-label {
+    transform: translateY(0);
+}
+
+.error {
+    &.form-control {
+        border: 1px solid #cc0000;
+        + .error {
+            padding-top: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+}
+
+form.ajax_form .error {
+    color: #cc0000;
+}

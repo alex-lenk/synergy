@@ -1,0 +1,74 @@
+.carousel-items {
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .swiper-slide {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        background: #fff;
+        overflow: hidden;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .swiper-button-disabled {
+        cursor: default;
+        &::before {
+            border-left-color: #ccc;
+            border-bottom-color: #ccc;
+        }
+    }
+}
+
+.carousel-header {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    .title-section {
+        margin-bottom: 0;
+    }
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    &::before {
+        width: 12px;
+        height: 12px;
+        border-left: 1px solid $mainColor;
+        border-bottom: 1px solid $mainColor;
+        display: block;
+        content: '';
+        transition: all 0.3s ease;
+    }
+    &:not(.swiper-button-disabled):hover::before {
+        border-left-color: $azureColor;
+        border-bottom-color: $azureColor;
+    }
+}
+
+.carousel-prev {
+    right: 21px;
+    padding-left: 5px;
+    &::before {
+        transform: rotate(45deg);
+    }
+}
+
+.carousel-next {
+    right: 0;
+    padding-right: 5px;
+    &::before {
+        transform: rotate(-135deg);
+    }
+}

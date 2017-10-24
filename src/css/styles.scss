@@ -1,0 +1,62 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+@import "common/variables";
+@import "common/mixin";
+@import "common/fonts";
+@import "common/common";
+
+/*
+@import "common/form";
+@import "common/btn";
+*/
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px 20px rgba(#d3d3d3, .3);
+}
+
+.section-info {
+    height: 897px;
+    background: #d3d3d3 url(../img/bg-leyer-top.jpg) no-repeat center top;
+    .pull-left, .pull-right {
+        width: 50%;
+    }
+}
+
+.header-top {
+    @include clearfix;
+}
+
+.logo {
+}
+
+.header-support {
+    text-align: right;
+    .phone, .email {
+        display: inline-block;
+    }
+    .email {
+        margin-left: 30px;
+    }
+    .address {
+        text-align: left;
+    }
+}
+
+.header-support_list {
+}
+
+.phone {
+}
+
+.email {
+}
+
+.section-info-body {
+}
+
+.section-info-column {
+}

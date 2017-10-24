@@ -1,0 +1,14 @@
+.top-panel {
+  padding-top: 9px;
+  padding-bottom: 15px;
+  background-color: #fff9f2;
+  font-weight: 400;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 1px 15px 0 rgba(42, 43, 43, 0.4);
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

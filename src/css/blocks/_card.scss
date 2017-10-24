@@ -1,0 +1,101 @@
+.card-item {
+    padding: 20px 20px 70px;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.3s ease;
+    img {
+        margin: 0 auto 20px;
+        max-height: 300px;
+        display: block;
+    }
+    &:hover {
+        box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.3);
+        .quick-view {
+            height: 100%;
+            opacity: 1;
+            .eye {
+                opacity: 1;
+            }
+        }
+        .quick-view-btn {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .card-order {
+            transform: translateY(0);
+        }
+    }
+}
+
+.card-price {
+    padding-right: 17px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    .ruble {
+        width: 13px;
+        height: 13px;
+        top: 2px;
+        right: 0;
+        position: absolute;
+        fill: $mainColor;
+    }
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-item-media {
+    padding: 20px 20px 0;
+    margin: -20px -20px 0;
+    position: relative;
+}
+
+.quick-view {
+    z-index: 5;
+    border-bottom: 1px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(238, 238, 238, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    .eye {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 20px;
+        fill: $mainColor;
+        opacity: 0;
+        transition-delay: .4s;
+        transition: all 0.5s ease;
+    }
+}
+
+.quick-view-btn {
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transition-delay: .3s;
+    transform: translateX(-115%);
+}
+
+.card-order {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #f1f0f0;
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    transform: translateY(80px);
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,37 @@
+.product-properties-heading {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.properties-list {
+    border: 1px solid #ededed;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.property-item {
+    padding: 15px;
+    display: flex;
+    &:nth-child(even) {
+        background-color: #ededed;
+    }
+}
+
+.property-name {
+    font-weight: bold;
+    min-width: 0;
+    max-width: 195px;
+    flex: 1 0 195px;
+}
+
+.property-value {
+    padding-left: 15px;
+    flex: 0 1 auto;
+}
+
+.product-btn {
+    min-width: 185px;
+    margin-top: 20px;
+}

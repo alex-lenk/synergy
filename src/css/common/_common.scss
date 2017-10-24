@@ -1,0 +1,137 @@
+body {
+    background: #fff;
+    color: #1e1e1e;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'proxima_nova', Arial, sans-serif;
+}
+
+a, .as-link {
+    color: $mainColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus {
+        color: $azureColor;
+        text-decoration: none;
+    }
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+
+[role="button"] {
+    cursor: pointer;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 10px 0 20px;
+    font-weight: bold;
+}
+
+h1 {
+    @include font-size(30px);
+}
+
+h2 {
+    @include font-size(26px);
+}
+
+h3 {
+    @include font-size(22px);
+}
+
+h4 {
+    @include font-size(20px);
+}
+
+h5 {
+    @include font-size(18px);
+}
+
+h6 {
+    @include font-size(17px);
+}
+
+.text {
+    &-center {
+        text-align: center
+    }
+    &-left {
+        text-align: left
+    }
+    &-right {
+        text-align: right
+    }
+    &-justify {
+        text-align: justify
+    }
+    &-bold {
+        font-weight: bold
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-lowercase {
+        text-transform: lowercase;
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-capitalize {
+        text-transform: capitalize;
+    }
+}
+*/
+
+/*
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content.active {
+    display: block;
+}
+*/
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.list {
+    &-unstyled {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}

@@ -1,0 +1,27 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  &::before {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: '';
+  }
+}
+
+.icon-call-gager::before {
+  width: 33px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.icon-free-shipping::before {
+  width: 37px;
+  height: 31px;
+  background-position: -33px 0;
+}
+
+.icon-interior-doors::before {
+  width: 22px;
+  height: 30px;
+  background-position: 0 -31px;
+}

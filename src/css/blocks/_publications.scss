@@ -1,0 +1,27 @@
+.publications {
+    margin-bottom: 75px;
+}
+
+.publications-title {
+    margin-bottom: 30px;
+}
+
+.publications-list {
+    display: flex;
+    justify-content: space-between;
+    li {
+        border: 4px double #eeeeee;
+        width: calc(100% / 3 - 15px);
+        box-shadow: 0 0 10px #eee;
+    }
+    img {
+        margin-bottom: 15px;
+    }
+}
+
+.publications-text {
+    padding: 0 10px 10px;
+    line-height: 1.3;
+    font-size: 15px;
+    display: block;
+}

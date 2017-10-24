@@ -1,0 +1,100 @@
+.main-offer-slider {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+    .swiper-slide {
+        font-size: 18px;
+        background: url(../img/bg-slide.jpg);
+        display: flex;
+    }
+    .swiper-slide-active {
+        .main-offer-meta, .main-offer-price-from, .main-offer-price-sum, .main-offer-price-currency, .btn-light {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .main-offer-title {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .main-offer-media img {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+    }
+    .btn-light {
+        opacity: 0;
+    }
+}
+
+.main-offer-content {
+    max-width: 490px;
+    padding: 50px 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-offer-meta {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(-200%);
+}
+
+.main-offer-title {
+    margin-bottom: 40px;
+    font-size: 33px;
+    line-height: 1.3;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.7s ease;
+    transform: translateX(-100%);
+}
+
+.main-offer-price {
+    margin-bottom: 30px;
+    color: $azureColor;
+    display: flex;
+}
+
+.main-offer-price-from {
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.9s ease;
+}
+
+.main-offer-price-sum {
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.main-offer-price-currency {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.9s ease;
+    .ruble {
+        width: 18px;
+        height: 18px;
+        fill: $azureColor;
+    }
+}
+
+.main-offer-media {
+    max-width: 400px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        opacity: 0;
+        transition: all 0.5s ease;
+        transform: translateX(100%) translateY(-100%);
+    }
+}

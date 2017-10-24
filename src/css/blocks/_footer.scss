@@ -1,0 +1,27 @@
+footer {
+    color: #fff;
+    a, .as-link {
+        color: #fff;
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+.section-copy {
+    font-size: 14px;
+    background-color: #191919;
+    a {
+        color: #ccc;
+    }
+}
+
+.section-copy-wrap {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.developer {
+    margin-left: auto;
+}

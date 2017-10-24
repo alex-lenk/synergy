@@ -1,0 +1,148 @@
+button {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+}
+
+.btn {
+    border: 1px solid transparent;
+    background: transparent;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+    &-default {
+        padding: 0 20px 0;
+        line-height: 40px;
+        height: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #ff6100;
+        font-size: 14px;
+        &:hover, &:focus, &:active {
+            color: #ff6100;
+            background-color: transparent;
+            border-color: #ff6100;
+        }
+        &:disabled {
+            background-color: #ff8e5b;
+            border-color: #ff8e5b;
+        }
+    }
+    
+    &-azure {
+        padding: 0 20px 0;
+        line-height: 40px;
+        height: 40px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+        background-color: #3bc3c3;
+        &:hover, &:focus, &:active {
+            color: #3bc3c3;
+            background-color: transparent;
+            border-color: #3bc3c3;
+        }
+        &:disabled {
+            background-color: #ff8e5b;
+            border-color: #ff8e5b;
+        }
+    }
+    
+    &-light {
+        min-width: 150px;
+        height: 50px;
+        padding: 0 10px;
+        color: $azureColor;
+        border: 2px solid $azureColor;
+        border-radius: 3px;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+        font-weight: normal;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            background: $azureColor;
+            opacity: 0;
+            transition: all 0.6s;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+        span {
+            position: relative;
+            z-index: 4;
+        }
+        &:hover, &:active {
+            color: #fff;
+            &::after {
+                height: 250px;
+                opacity: 1;
+            }
+        }
+    }
+    
+    &-buy {
+        height: 35px;
+        line-height: 36px;
+        padding: 0 10px 0 40px;
+        border-radius: 3px;
+        color: $azureColor;
+        border: 1px solid $azureColor;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            background: $azureColor;
+            opacity: 0;
+            transition: all 0.6s;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+        span {
+            position: relative;
+            z-index: 4;
+        }
+        .buy {
+            width: 18px;
+            height: 18px;
+            left: 10px;
+            top: 6px;
+            position: absolute;
+            fill: $azureColor;
+            z-index: 9;
+            transition: all 0.3s ease;
+        }
+        &:hover, &:active {
+            color: #fff;
+            &::after {
+                height: 250px;
+                opacity: 1;
+            }
+            .buy {
+                fill: #fff;
+            }
+        }
+    }
+}
